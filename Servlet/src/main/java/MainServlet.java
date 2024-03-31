@@ -24,10 +24,11 @@ public class MainServlet extends HttpServlet
         String path = "";
         switch (pageNumber)
         {
-            case 1 -> path = "page1.html";
-            case 2 -> path = "page2.html";
-            case 3 -> path = "page3.html";
-            case 4 -> path = "page4.html";
+            case 1 -> path = "index.html";
+            case 2 -> path = "projects.html";
+            case 3 -> path = "customers.html";
+            case 4 -> path = "contacts.html";
+            case 5 -> path = "offers.html";
             default -> response.sendError(HttpServletResponse.SC_NOT_FOUND, "Страница не найдена");
         }
 
